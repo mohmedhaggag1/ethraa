@@ -1,0 +1,131 @@
+
+<div class="page-wraper" >
+
+    <!-- header -->
+    <app-header-light3></app-header-light3>
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <app-banner1 [data] = "banner"></app-banner1>
+       
+        <div class="section-full content-inner shop-account">
+            <!-- Product -->
+            <div class="container">
+                
+                <div class="row dzseth">
+					 <div class="col-lg-3 col-md-6 m-b30">
+					
+					</div> 
+					<div class="col-lg-6 col-md-6 m-b30 formcenter" >
+						<div class="p-a30 border-1 seth">
+							<div class="tab-content nav">
+								<form id="login"   [formGroup]="loginForm" (ngSubmit)="login()" class="tab-pane active col-12 p-a0 " dir="rtl" >
+									<h4 class="font-weight-700  text-center"> لإظهار الحقائب التدريبية من فضلك قم بتسجيل الدخول</h4>
+									
+									<div class="form-group" dir="rtl">
+										<label class="font-weight-600  pull-right"  dir="rtl" >  البريد الإلكتروني*</label>
+										
+										
+										<input name="email" required="" class="form-control "
+										 placeholder="البريد الإلكتروني " 
+										  type="email"  formControlName="email">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-600  pull-right"  dir="rtl" >كلمة المرور *</label>
+										<input  required="" 
+										formControlName="password" class="form-control "
+										 placeholder=" كلمه المرور"
+										 type="password"
+										 >
+									</div>
+									<div class=""  dir="rtl">
+										<button  class="site-button  mb-3 button-lg radius-no  pull-right"
+										type="submit"	> تسجيل</button>
+									</div>
+								</form>
+							<!--  -->
+								<!-- <form  [formGroup]="MyDataTOchange" (ngSubmit)="ForGEtPassWOrd()" 
+								  id="sendCode" class="tab-pane fade  col-12 p-a0" dir="rtl">
+								
+									<div class="form-group">
+										<label class="font-weight-700  pull-right" >البريد الإلكتروني * </label>
+										<input FormConto required="" formControlName="email" class="form-control" placeholder="البريد الإلكتروني " type="email">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-600  pull-right"  dir="rtl" >الكود الخاص بك *</label>
+										<input  required="" 
+										formControlName="code" class="form-control "
+										 placeholder=" ادخل الكود الخاص بك"
+										 type="number"
+										 >
+									</div>
+									<div class="form-group">
+										<label class="font-weight-600  pull-right"  dir="rtl" >الرقم السري الجديد *</label>
+										<input  required="" 
+										formControlName="newPassword" class="form-control "
+										 placeholder=" الرقم السري الجديد"
+										 type="password"
+										 >
+									</div>
+									<div class="text-center" dir="ltr"> 
+										<a class="site-button outline gray button-lg radius-no m-2" data-toggle="tab" href="#login">رجوع </a>
+										<button type="submit" class="site-button  button-lg radius-no">حـفـظ</button>
+									</div>
+
+								</form> -->
+								<!-- to change password -->
+								<!-- <form  
+								[formGroup]="changepassword" (ngSubmit)="Changepass()"  
+								  id="change-password" class="tab-pane fade  col-12 p-a0" dir="rtl">
+								
+									<div class="form-group">
+										<label class="font-weight-700  pull-right" >البريد الإلكتروني * </label>
+										<input  required="" formControlName="email" class="form-control" placeholder="البريد الإلكتروني " type="email">
+									</div>
+									<div class="form-group">
+										<label class="font-weight-600  pull-right"  dir="rtl" >الرقم السري القديم *</label>
+										<input  required="" 
+										formControlName="password" class="form-control "
+										 placeholder=" ادخل الرقم السري القديم"
+										 type="password"
+										 >
+									</div>
+									<div class="form-group">
+										<label class="font-weight-600  pull-right"  dir="rtl" >الرقم السري الجديد *</label>
+										<input  required="" 
+										formControlName="newPassword" class="form-control "
+										 placeholder=" الرقم السري الجديد"
+										 type="password"
+										 >
+									</div>
+									<div class="text-center" dir="ltr"> 
+										<a class="site-button outline gray button-lg radius-no m-2" data-toggle="tab" href="#login">رجوع </a>
+										<button type="submit" class="site-button  button-lg radius-no">حـفـظ</button>
+									</div>
+
+								</form> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 m-b30"></div>
+				</div>
+			</div>
+            <!-- Product END -->
+		</div>
+		<!-- Shop Service info -->
+		<!-- <app-icon-box4></app-icon-box4> -->
+		<!-- Shop Service info End -->
+    </div>
+    <!-- Content END-->
+    <!-- Newsletter -->
+	<div class="section-full p-tb50 bg-primary text-white">
+		<!-- <app-newsletter2></app-newsletter2> -->
+	</div>
+   <!-- Footer -->
+    <app-footer13></app-footer13>
+    <!-- Footer END-->
+    <button class="scroltop fa fa-chevron-up" ></button>
+	
+</div>
+

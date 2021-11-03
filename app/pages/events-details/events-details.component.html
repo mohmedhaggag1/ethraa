@@ -1,0 +1,48 @@
+
+<div class="page-wraper" >
+
+    <!-- header -->
+    <app-header-light1></app-header-light1>
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <app-banner1 [data] = "banner"></app-banner1>
+        <!-- inner page banner END -->
+        <!-- contact area -->
+        <div class="content-block">
+			<!-- Our Team -->
+			<!-- <a [routerLink]="['/blog-half-img']">
+				إضافة دورة تدريبية 
+			</a> -->
+
+			
+			<div class="section-full content-inner" dir="rtl">
+				<div class="container">
+					<div class="row">
+						
+						<div  class="col-lg-3 col-md-6 col-sm-6" *ngFor="let teach of teachers">
+							<div  
+								class="dlab-box m-b30 dlab-team1">
+								<div class="dlab-media">
+									
+										<img width="358" height="460" alt="" src="http://pixelserver-001-site12.ctempurl.com/images/{{teach.image}}">
+								</div>
+								<div class="dlab-info">
+									<h4 class="dlab-title">{{teach.name}}</h4>
+									<button class="btn btn_danger" (click)=deleteone(teach.id)>حذف المعلم</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+   
+    <app-footer13></app-footer13>
+   
+    <button class="scroltop fa fa-chevron-up" ></button>
+</div>

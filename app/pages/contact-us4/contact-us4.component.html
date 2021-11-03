@@ -1,0 +1,142 @@
+
+<div class="page-wraper">
+
+
+
+    <!-- header -->
+    <app-header-light3></app-header-light3>
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content bg-gray">
+        <!-- inner page banner -->
+        <app-banner1 [data] = "banner"></app-banner1>
+        <!-- inner page banner END -->
+        <!-- contact area -->
+        <div class="section-full content-inner contact-style-1">
+			<div class="container">
+                <div class="row dzseth">
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper bx-style-1 bg-white p-lr20 p-tb30 center seth radius-sm">
+							<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-location-pin"></i></a> </div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-uppercase">العنوان </h5>
+								<p>حي الرقيقة الهفوف - المملكة العربية السعودية</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper bx-style-1 bg-white p-lr20 p-tb30 center seth radius-sm">
+							<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-email"></i></a> </div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-uppercase">البريد الإلكتروني</h5>
+								<p> ethra144@gmail.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper bx-style-1 bg-white p-lr20 p-tb30 center seth radius-sm">
+							<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-mobile"></i></a> </div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-uppercase">الهاتف </h5>
+								<p>0552060144</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper bx-style-1 bg-white p-lr20 p-tb30 center seth radius-sm">
+							<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-printer"></i></a> </div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-uppercase">الفاكس </h5>
+								<p>0552060144</p>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+					<!-- Left part start -->
+                    <div class="col-lg-6 m-b30">
+                        <div class="p-a30 bg-white clearfix border-1 radius-sm">
+							<h3 [ngStyle]="{ 'text-align' : 'center', 'text' :'bold'}">تواصل معنا </h3>
+							<div class="dzFormMsg"></div>
+							<form
+                            [formGroup]="ContactUsData" (ngSubmit)="contactus()" 
+                            >
+								<input type="hidden" value="Contact"  >
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input  type="text" required class="form-control"
+                                                formControlName="name"
+                                                [ngStyle]="{ 'text-align': 'right'}" placeholder="اسمك (مطلوب)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+											    <input type="email"
+                                                formControlName="email"
+                                                class="form-control"[ngStyle]="{ 'text-align': 'right'}"  required  placeholder="بريدك الإلكتروني (مطلوب)" >
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input 
+                                                formControlName="phone"
+                                                
+                                                type="number" required class="form-control"
+                                                [ngStyle]="{ 'text-align': 'right'}"  placeholder="الهاتف">
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input  type="text" 
+                                                formControlName="subject"
+                                                required class="form-control"[ngStyle]="{ 'text-align': 'right'}"
+                                                  placeholder="الموضـــوع">
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <textarea  rows="4" class="form-control" 
+                                                required [ngStyle]="{ 'text-align': 'right'}" 
+                                                formControlName="message"
+                                                placeholder="رسالتك"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button  type="submit"  class="site-button "> <span>ارســـــــــال </span> </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Left part END -->
+					<!-- right part start -->
+                    <div class="col-lg-6 m-b30 d-flex">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.6378171696824!2d49.572598632573694!3d25.349931779498416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e3796d49ebce36d%3A0x5f84ff6ceca25d85!2sMunifah%2C%20Al%20Hofuf%2036441%2C%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1630918925099!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" class="align-self-stretch radius-sm" style="border:0; width:100%;  min-height:100%;" allowfullscreen></iframe> -->
+                    </div>
+                    <!-- right part END -->
+                </div>
+            </div>
+        </div>
+        <!-- contact area  END -->
+    </div>
+    <!-- Content END-->
+    <!-- Footer -->
+   <!-- Newsletter -->
+	<app-newsletter2></app-newsletter2>
+   <!-- Footer -->
+    <app-footer13></app-footer13>
+    <!-- Footer END-->
+    <button class="scroltop fa fa-chevron-up" ></button>
+</div>

@@ -1,0 +1,16 @@
+.font1{
+    text-align: right;
+    font-size: 25px;
+    animation-delay: 4ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 4px;
+    
+}
+
+
+.ulfont{
+    text-align: right;
+    font-size: 25px;
+    list-style-type: none;
+}
+.todown{}

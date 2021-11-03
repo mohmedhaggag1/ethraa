@@ -1,0 +1,419 @@
+<div class="page-wraper">
+
+
+	<!-- header -->
+	<app-header-light3></app-header-light3>
+	<!-- header END -->
+	<!-- Content -->
+	<div class="page-content bg-gray">
+		<!-- inner page banner -->
+		<app-banner1 [data]="banner"></app-banner1>
+		<!-- inner page banner END -->
+		<!-- <div class="content-area">
+            <div class="container">
+                <div class="row"> -->
+
+		<!-- <ng-template [ngIf]="layout.sidebar">
+						<div class="col-xl-3 col-lg-4" *ngIf="layout.sidebarPosition=='left'">
+							<aside class="side-bar sticky-top">
+								<app-search-form3></app-search-form3>
+								<app-recent-posts1></app-recent-posts1>
+								<app-our-gallery1></app-our-gallery1>
+								<app-category-list1></app-category-list1>
+								<app-tag-list1></app-tag-list1>
+							</aside>
+						</div>
+					</ng-template> -->
+
+		<!-- left part start -->
+		<!-- <div class="" [ngClass]="{'col-xl-9 col-lg-8': layout.sidebar === true, 'col-xl-12 col-lg-12': layout.sidebar === false}"> -->
+
+		<!-- blog grid  -->
+		<!-- <div id="masonry" class="dlab-blog-grid-2 row">
+							
+							
+                                <div class="post card-container {{ layout.gridClass}} col-md-6 col-sm-12">
+									<div class="blog-post blog-grid blog-rounded bg-white shadow">
+										<div class="dlab-post-media dlab-img-effect"> 
+											<a [routerLink]="['/blog-single']"><img src="assets/images/blog/grid/pic1.jpg" alt=""/></a> 
+										</div>
+										<div class="dlab-info p-a25">
+											<div class="dlab-post-meta">
+												<ul>
+													<li class="post-author"> <i class="la la-user-circle"></i> By <a href="javascript:void(0);">Jamie</a> </li>
+													<li class="post-tag"> <a href="javascript:void(0);">KNOWLEDGE</a> </li>
+												</ul>
+											</div>
+											<div class="dlab-post-title ">
+												<h4 class="post-title"><a [routerLink]="['/blog-single']">Why is Early Education Essential?</a></h4>
+											</div>
+											<div class="dlab-post-text">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+											</div>
+											<div class="post-footer">
+												<div class="dlab-post-meta">
+													<ul>
+														<li class="post-date"> <i class="la la-clock"></i> <strong>01 June</strong> <span> 2020</span> </li>
+													</ul>
+												</div>
+												<ul class="dlab-social-icon dez-border">
+													<li><a class="site-button facebook circle-sm fa fa-facebook" href="javascript:void(0);"></a></li>
+													<li><a class="site-button twitter circle-sm fa fa-twitter " href="javascript:void(0);"></a></li>
+													<li><a class="site-button linkedin circle-sm fa fa-linkedin " href="javascript:void(0);"></a></li>
+													<li><a class="site-button instagram  circle-sm fa fa-instagram  " href="javascript:void(0);"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post card-container {{ layout.gridClass}} col-md-6 col-sm-12">
+									<div class="blog-post blog-grid blog-rounded bg-white shadow">
+										<div class="dlab-post-media dlab-img-effect"> 
+											<a [routerLink]="['/blog-single']"><img src="assets/images/blog/grid/pic2.jpg" alt=""></a> 
+										</div>
+										<div class="dlab-info p-a25">
+											<div class="dlab-post-meta">
+												<ul>
+													<li class="post-author"> <i class="la la-user-circle"></i> By <a href="javascript:void(0);">Reuben</a> </li>
+													<li class="post-tag"> <a href="javascript:void(0);">Event</a> </li>
+												</ul>
+											</div>
+											<div class="dlab-post-title">
+												<h4 class="post-title"><a [routerLink]="['/blog-single']">The Shocking Revelation of Education.</a></h4>
+											</div>
+											<div class="dlab-post-text">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+											</div>
+											<div class="post-footer">
+												<div class="dlab-post-meta">
+													<ul>
+														<li class="post-date"> <i class="la la-clock"></i> <strong>01 June</strong> <span> 2020</span> </li>
+													</ul>
+												</div>
+												<ul class="dlab-social-icon dez-border">
+													<li><a class="site-button facebook circle-sm fa fa-facebook" href="javascript:void(0);"></a></li>
+													<li><a class="site-button twitter circle-sm fa fa-twitter " href="javascript:void(0);"></a></li>
+													<li><a class="site-button linkedin circle-sm fa fa-linkedin " href="javascript:void(0);"></a></li>
+													<li><a class="site-button instagram circle-sm fa fa-instagram  " href="javascript:void(0);"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post card-container {{ layout.gridClass}} col-md-6 col-sm-12">
+									<div class="blog-post blog-grid blog-rounded bg-white shadow">
+										<div class="dlab-post-media dlab-img-effect"> 
+											<a [routerLink]="['/blog-single']"><img src="assets/images/blog/grid/pic3.jpg" alt=""></a> 
+										</div>
+										<div class="dlab-info p-a25">
+											<div class="dlab-post-meta">
+												<ul>
+													<li class="post-author"> <i class="la la-user-circle"></i> By <a href="javascript:void(0);">Caroline</a> </li>
+													<li class="post-tag"> <a href="javascript:void(0);">Education</a> </li>
+												</ul>
+											</div>
+											<div class="dlab-post-title ">
+												<h4 class="post-title"><a [routerLink]="['/blog-single']">Five Things Nobody Told You About</a></h4>
+											</div>
+											<div class="dlab-post-text">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+											</div>
+											<div class="post-footer">
+												<div class="dlab-post-meta">
+													<ul>
+														<li class="post-date"> <i class="la la-clock"></i> <strong>01 June</strong> <span> 2020</span> </li>
+													</ul>
+												</div>
+												<ul class="dlab-social-icon dez-border">
+													<li><a class="site-button facebook circle-sm fa fa-facebook" href="javascript:void(0);"></a></li>
+													<li><a class="site-button twitter circle-sm fa fa-twitter " href="javascript:void(0);"></a></li>
+													<li><a class="site-button linkedin circle-sm fa fa-linkedin " href="javascript:void(0);"></a></li>
+													<li><a class="site-button instagram circle-sm fa fa-instagram  " href="javascript:void(0);"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post card-container {{ layout.gridClass}} col-md-6 col-sm-12">
+									<div class="blog-post blog-grid blog-rounded bg-white shadow">
+										<div class="dlab-post-media dlab-img-effect"> 
+											<a [routerLink]="['/blog-single']"><img src="assets/images/blog/grid/pic4.jpg" alt=""></a> 
+										</div>
+										<div class="dlab-info p-a25">
+											<div class="dlab-post-meta">
+												<ul>
+													<li class="post-author"> <i class="la la-user-circle"></i> By <a href="javascript:void(0);">Harry</a> </li>
+													<li class="post-tag"> <a href="javascript:void(0);">knowledge</a> </li>
+												</ul>
+											</div>
+											<div class="dlab-post-title ">
+												<h4 class="post-title"><a [routerLink]="['/blog-single']">Here's What People Are Saying About</a></h4>
+											</div>
+											<div class="dlab-post-text">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+											</div>
+											<div class="post-footer">
+												<div class="dlab-post-meta">
+													<ul>
+														<li class="post-date"> <i class="la la-clock"></i> <strong>01 June</strong> <span> 2020</span> </li>
+													</ul>
+												</div>
+												<ul class="dlab-social-icon dez-border">
+													<li><a class="site-button facebook circle-sm fa fa-facebook" href="javascript:void(0);"></a></li>
+													<li><a class="site-button twitter circle-sm fa fa-twitter " href="javascript:void(0);"></a></li>
+													<li><a class="site-button linkedin circle-sm fa fa-linkedin " href="javascript:void(0);"></a></li>
+													<li><a class="site-button instagram circle-sm fa fa-instagram  " href="javascript:void(0);"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post card-container {{ layout.gridClass}} col-md-6 col-sm-12">
+									<div class="blog-post blog-grid blog-rounded bg-white shadow">
+										<div class="dlab-post-media dlab-img-effect"> 
+											<a [routerLink]="['/blog-single']"><img src="assets/images/blog/grid/pic1.jpg" alt=""></a> 
+										</div>
+										<div class="dlab-info p-a25">
+											<div class="dlab-post-meta">
+												<ul>
+													<li class="post-author"> <i class="la la-user-circle"></i> By <a href="javascript:void(0);">Anna</a> </li>
+													<li class="post-tag"> <a href="javascript:void(0);">event</a> </li>
+												</ul>
+											</div>
+											<div class="dlab-post-title ">
+												<h4 class="post-title"><a [routerLink]="['/blog-single']">How Education Can Ease Your Pain </a></h4>
+											</div>
+											<div class="dlab-post-text">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+											</div>
+											<div class="post-footer">
+												<div class="dlab-post-meta">
+													<ul>
+														<li class="post-date"> <i class="la la-clock"></i> <strong>01 June</strong> <span> 2020</span> </li>
+													</ul>
+												</div>
+												<ul class="dlab-social-icon dez-border">
+													<li><a class="site-button facebook circle-sm fa fa-facebook" href="javascript:void(0);"></a></li>
+													<li><a class="site-button twitter circle-sm fa fa-twitter " href="javascript:void(0);"></a></li>
+													<li><a class="site-button linkedin circle-sm fa fa-linkedin " href="javascript:void(0);"></a></li>
+													<li><a class="site-button instagram circle-sm fa fa-instagram  " href="javascript:void(0);"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post card-container {{ layout.gridClass}} col-md-6 col-sm-12">
+									<div class="blog-post blog-grid blog-rounded bg-white shadow">
+										<div class="dlab-post-media dlab-img-effect"> 
+											<a [routerLink]="['/blog-single']"><img src="assets/images/blog/grid/pic2.jpg" alt=""></a> 
+										</div>
+										<div class="dlab-info p-a25">
+											<div class="dlab-post-meta">
+												<ul>
+													<li class="post-author"> <i class="la la-user-circle"></i> By <a href="javascript:void(0);">Oliver</a> </li>
+													<li class="post-tag"> <a href="javascript:void(0);">education</a> </li>
+												</ul>
+											</div>
+											<div class="dlab-post-title ">
+												<h4 class="post-title"><a [routerLink]="['/blog-single']">Why You Should Not Go To Education</a></h4>
+											</div>
+											<div class="dlab-post-text">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+											</div>
+											<div class="post-footer">
+												<div class="dlab-post-meta">
+													<ul>
+														<li class="post-date"> <i class="la la-clock"></i> <strong>01 June</strong> <span> 2020</span> </li>
+													</ul>
+												</div>
+												<ul class="dlab-social-icon dez-border">
+													<li><a class="site-button facebook circle-sm fa fa-facebook" href="javascript:void(0);"></a></li>
+													<li><a class="site-button twitter circle-sm fa fa-twitter " href="javascript:void(0);"></a></li>
+													<li><a class="site-button linkedin circle-sm fa fa-linkedin " href="javascript:void(0);"></a></li>
+													<li><a class="site-button instagram circle-sm fa fa-instagram  " href="javascript:void(0);"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+                           
+
+						   </div> -->
+		<!-- blog grid END -->
+
+		<!-- Pagination start -->
+		<!-- <div class="pagination-bx rounded-sm primary clearfix m-b30 text-center col-md-12">
+							<ul class="pagination">
+								<li class="previous"><a href="javascript:void(0);"><i class="ti-arrow-left"></i> Prev</a></li>
+								<li class="active"><a href="javascript:void(0);">1</a></li>
+								<li><a href="javascript:void(0);">2</a></li>
+								<li><a href="javascript:void(0);">3</a></li>
+								<li class="next"><a href="javascript:void(0);">Next <i class="ti-arrow-right"></i></a></li>
+							</ul>
+						</div> -->
+		<!-- Pagination END -->
+		<!-- </div> -->
+		<!-- left part start -->
+		<!-- Side bar start -->
+		<!-- <ng-template [ngIf]="layout.sidebar">
+						<div class="col-xl-3 col-lg-4" *ngIf="layout.sidebarPosition=='right'">
+							<aside class="side-bar sticky-top">
+								<app-search-form3></app-search-form3>
+								<app-recent-posts1></app-recent-posts1>
+								<app-our-gallery1></app-our-gallery1>
+								<app-category-list1></app-category-list1>
+								<app-tag-list1></app-tag-list1>
+							</aside>
+						</div>
+					</ng-template> -->
+		<!-- Side bar END -->
+		<!-- </div>
+            </div>
+        </div> -->
+
+		<!-- new -->
+		<section>
+			<div class="container">
+				<div class="row">
+
+
+					<div class="single-service">
+
+						<h3 class="text-theme-colored line-bottom text-theme-colored">الخطة التدريبية للمدربين </h3>
+
+
+						<h4>استخدام التقنية</h4>
+
+
+						<ul class="primary">
+							<li>قبل بداية الدورة يقوم أحد ممثلي الدعم الفني بالدخول مع المدرب الى المنصة التعليمية
+								لشرحها له وتوضيح كيفية التعامل مع الأدوات التقنية واستخدامها لتقديم الدروس بالشكل
+								المطلوب بحسب المواصفات المهنية والتقنية بالمركز.
+							</li>
+							<li> يتم أيضاً تعريف المدرب بعملية تسجيل الدخول الى الموقع بعد تزويده ببيانات الدخول ومن
+								ثم الانتقال الي التطبيقات الوسيطة المستخدمة في البيئة التعليمية والتأكد من أنه قادر على
+								العمل بها بكل سهولة ويسر.
+							</li>
+							<li>نتأكد من أن المدرب يمتلك الأدوات اللازمة لتقديم الدورة بصورة مثالية ، كجهاز الحاسب
+								المستخدم وسرعته والذاكرة الموجودة به ، والميكروفون والسماعة.</li>
+							<li>يتم استعراض شرائح العرض الخاصة بالدروس مع المدرب وتوضيح عملية التنقل بين الصفحات. وكيفية
+								مراجعة كشف الحضور وتوجيه الأسئلة الى المتدربين وإعطاؤهم فرص للمشاركة في الدرس وطرح
+								الأسئلة من خلال علامة اليد الموجودة بالبرنامج. وكيفية فتح الميكروفون للتحدث او قفله.
+							</li>
+							<li>أدناه تعليمات يتم تزويد المدرب بها ليكون على دراية تامة بالمسؤولية الموكلة له</li>
+						</ul>
+
+						<h4>إرشادات للمدربين</h4>
+						<h6>أخي المدرب:</h6>
+						<p>المهمة التي تقوم بها مهمة كبيرة تتطلب منك بذل جهود ضخمة لتحقيق أهداف الحقيبة التدريبية
+							والتحقق من انتقال أثر التدريب إلى المتدربين بأكمل صورة، لذا نأمل منك مراعاة الإرشادات الآتية
+							التي ستساعدك بإذن الله عز وجل على تحقيق أهداف البرنامج التدريبي:</p>
+
+						<ul>
+							<li>قراءة الحقيبة بشكل جيد وتفحص كل محتوياتها يزيد من كفاءتك التدريبية وإدارتك لجلسات
+								التدريب ويجنبك الكثير من الحرج في قاعة التدريب.</li>
+							<li>اصطحب الحقيبة التدريبية دائما متى ما كنت في قاعة التدريب لأنك تحتاج دائماً إلى محتوياتها
+								التي أعدت لمساعدتك.</li>
+							<li> مراعاة الزمن في البرنامج بدقة والحرص على استثمار الوقت كاملاً وفق الخطة الموضوعة لكل
+								جلسة عامل مساعد في تحقيق أهداف البرنامج.</li>
+							<li> إعطاء النشاطات التدريبية حقها كاملاً من الزمن يحقق أهدافها.</li>
+							<li> تفعيل دور المتدرب في البرنامج بحيث يكون المدرب منسقاً ومديراً للحوار والنقاش داخل
+								القاعة؛ يجعل البرنامج التدريبي أكثر أثراً وتشويقاً.</li>
+							<li> تشكيل المجموعات بشكل عشوائي بعد كل جلسة تدريبية يسهم في الحفاظ على حيوية المتدربين
+								والاستفادة من خبرات متنوعة؛ إلا إذا اقتضى النشاط تشكيل مجموعات متجانسة بحسب التخصص
+								مثلاً.</li>
+							<li> الحرص على التقويم التكويني أثناء عملية التدريب يساعد المتدرب في بلوغ أهداف الجلسة
+								التدريبية.</li>
+							<li> تلخيص عمل المجموعات بعد العرض والنقاش ووضعه على شكل نقاط على السبورة أو الشفافية أو
+								السبورة الورقية وتوجيهه نحو الهدف من المهارات التدريبية المهمة جداً التي تستثمر نتائج
+								التدريب بشكل فاعل.</li>
+							<li> الحرص على الوصول في نهاية كل جلسة تدريبية إلى تحديد خلاصة للتعلم المتحقق يسهم في تأكيد
+								التعلم.</li>
+							<li> على المدرب أن لا يتجاوز خطوة أو مرحلة في الحقيبة ما لم يتأكد من الحد الأدنى من التمكن
+								لدى جميع المتدربين.</li>
+							<li> بالإمكان اختزال وقت التنفيذ لخطوة ما أو مرحلة ما عند تأكد المدرب من تمكن المتدربين منها
+								احتراماً لإمكاناتهم وخبراتهم.</li>
+						</ul>
+
+						<h4>تطوير المحتوى الالكتروني</h4>
+						<p>مع تعدد المنصات التعليمية العاملة في هذا المجال، كان لابد لنا أن نسعى دائماً لترقية المحتوى
+							المقدم في كل الدورات بحيث يتماشى مع متطلبات سوق العمل في عصرنا الحالي.</p>
+						<ul>
+							<li>نقوم بتحديث محتوى الدورة من وقت لآخر والتأكد من تقديم كل ما هو جديد بخصوص ما يتم تقديمه
+								للمتدربين. وايضاً التأكد من المحاور والاهداف والوسائل الخاصة بالمنهج المقدم. بالتنسيق مع
+								الفريق الأكاديمي الخاص بالمركز والمدرب الذي سوف يقدم الدورة.</li>
+							<li> نقوم ايضاً بالتحقق من كل الدورات المهنية المعروفة عالمياً والتأكد أن المنهج المقدم
+								مطالب لكل المعايير الدولية والمحلية الموجودة.</li>
+							<li>التأكد من تصميم محتوى باختيار سناريوهات محددة لتوصيل المعلومة بشكل دقيق للمتدربين وتحديد
+								الأهداف السلوكية المروجة واختيار مصادر التعلم الملائمة وتحديد التقنيات والوسائل المناسبة
+								والتي سوف تلبي الحاجة لتقديم هذا المحتوى.</li>
+							<li>التنفيذ العملي للسناريو الذي تم وضعه واستخدام برامج التصاميم لكتابة المحتوى ولإنتاج
+								مصادر ووسائط التعلم وفقاً لرؤية المركز.</li>
+
+						</ul>
+
+
+						<h4>مهارات التدريس</h4>
+						<ul>
+							<li>يستبعد سـمات الارتجالية والعشوائية التي تحيط بمهام المدرب ويحول عمل المدرب إلى نسق من
+								الخطوات المنظمة المترابطة، المصممة لتحقيق الأهداف التعليمية.</li>
+							<li> يجنب المدرب الكثير من المواقف الطارئة المحرجة، التي ترجع إلى الدخول في الدرس اليومي دون
+								وضع تطور واضح.</li>
+							<li> يؤدي ذلك إلـى نمو خبرات المدرب العملية والـمهنية بصفة دورية ومستقرة، وذلك لمروره بخبرات
+								متنوعة في أثناء القيام بتخطيط الدروس .</li>
+							<li>يؤدي إلى وضـوح الرؤية أمام المدرب، إذ يساعد على تحديد دقيق لخبرات المتدربين السابقة
+								وأهداف التعليم الحالية .</li>
+							<li> يساعد المدرب على اكـتشاف عيوب المنهج؛ سواء ما يتعلق بالأهداف أو المحتوى أو طرق التدريب،
+								أو أساليب التقويم، ومن ثم يمـكنه من العمل على تلافيها، ويساعده عـلى تحسين المنهج بنفسه
+								أو عن طريق تقديم المقترحات الخاصة بذلك للجهات المعنية.</li>
+							<li> يتيح التخطيط للمدرب فرصـة الاستزادة من الـمادة والتثبيت منها وتحري وجوه الصواب فيها عن
+								طريق رجـوعه إلى المصادر المختلفة.</li>
+							<li> يساعد المدرب على التمكن من الـمادة، وتحديد مقدار المادة الذي يناسب الزمن المخصص.</li>
+							<li> يساعد المدرب على تنظيم أفكاره وترتـيب مادته وإجادة تنظيمها بأسلوب ملائم.</li>
+							<li> يكشف التخطيط المدرب ما يحـتاج إلـيه من وسائل تعليمية تثير تشوق المتدربين إليها ، وتوضح
+								محتوى الدرس وتشجـع على المشاركة الإيجابية فيه .</li>
+							<li> يعد التخطيط سجلاً لأنشطة التـعليم سواء أكان ذلك من جانب المدرب ، أم المتدربين، وهذا
+								السجل يفيد المدرب إذ يمـكن الرجـوع إليه إذا نسى شيئاً في أثناء سير الدورة ، كما يمكن أن
+								يذكره فيمـا بعد بالنقاط التي تمت تغطيتها أو دراستها في الموضوع .</li>
+							<li> ييسر التخطيط على المدرب عملية المراجعة والتعديل إذا وجد ضرورة لذلك.</li>
+						</ul>
+
+						<h4>التفاعل في التعليم الإلكتروني </h4>
+						<p>ينقسم التفاعل في التعليم الإلكتروني على نوعين، هما: التفاعل المتزامن، والتفاعل غير المتزامن،
+							ويمكن توضيح ذلك فيما يأتي:</p>
+						<h4>التفاعل المتزامن Synchronous Interaction </h4>
+						<p>ويعني التفاعل الحي الذي يتم في الوقت ذاته ويتم فيه التواصل بين المتدرب أو المدرب وأقرأنه في
+							اللحظة ذاتها وهو ما يطلق عليه التعليم الإلكتروني الحي Live e-learning أو التعلم التزامني
+							Synchronous learning، ومن صور ذلك أن يطرح المدرب على المتدربين سؤالاً فيقوم المتدربين
+							بالإجابة عنه في التو، من خلال عدد من الأدوات Tools أو التطبيقات Applications التي تستخدم في
+							شبكات الحاسب الآلي لإتمام هذا التفاعل كغرف المحادثة Chat Rooms واللوحة البيضاء التشاركية
+							Shared White Board ومؤتمرات الفيديو Video Conferences أو المؤتمرات السمعية audio Conferences
+							.</p>
+						<h4>التفاعل غير المتزامن Asynchronous Interaction </h4>
+						<p>وهو ما يتم فيه التواصل بين المدرب والمتدرب والأقران بشكل غير متزامن أي أنه لا يتم في نفس
+							اللحظة، بمعنى أنه يوجد فاصل زمني بين الرسالة التي يبعثها المدرب إلى المتدرب وبين تلقيه رداً
+							عليها، كأن يبعث المدرب إلى أحد المتدربين رسالة يطلب منه الإجابة عن سؤال معين فيقوم الطالب
+							بالرد عليها في وقت لاحق، ومن بين الأدوات Tools والتطبيقات Applications التي تستخدم لإتمام
+							التفاعل غير التزامني، البريد الإلكتروني e-mail والقوائم البريدية Mailing Lists، ومجموعة
+							الأخبار News Group، ولوحات النقاش الإلكترونية واستخدام الوسائل السمعية والمرئية كالفيديو
+							والصوت.</p>
+
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Content END-->
+	<!-- Footer -->
+	<!-- Newsletter -->
+	<!-- <app-newsletter2></app-newsletter2> -->
+	<!-- Footer -->
+	<app-footer13></app-footer13>
+	<!-- Footer END-->
+	<!-- scroll top button -->
+	<button class="scroltop fa fa-chevron-up"></button>
+</div>

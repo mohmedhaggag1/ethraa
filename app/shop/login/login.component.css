@@ -1,0 +1,36 @@
+.hla{
+    /* color: red; */
+    margin-left: 430px;
+    /* font-size: 20px; */
+}
+
+.hla1{
+    margin-left: 460px; 
+    font-size: 20px;
+}
+
+.hll{
+
+    margin-left:150px;
+}
+.hlll{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 
+.formcenter{
+
+    justify-content: center;
+    margin-left: 300px;
+} */
+
+.form-control.ng-invalid.ng-touched{
+    border-color: red;
+}
+
+
+.form-control.ng-valid{
+    border-color: brown;
+}
+

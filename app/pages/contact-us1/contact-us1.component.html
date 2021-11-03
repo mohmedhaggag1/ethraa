@@ -1,0 +1,44 @@
+
+<div class="page-wraper">
+
+    <app-header-light1></app-header-light1>
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <app-banner1 [data] = "banner"></app-banner1>
+        <!-- inner page banner END -->
+        <!-- contact area -->
+        <div class="section-full content-inner" dir="rtl">
+            <!-- Product -->
+            <div class="container">
+                <div class="row">
+					
+					<div *ngFor='let corse of courses' class="col-lg-3 col-md-4 col-sm-6">
+						<div  class="item-box m-b10">
+							<div class="item-img imgSize " title="corse.name" >
+							<img   class="imgSize1" src="http://pixelserver-001-site12.ctempurl.com/images/{{corse.image}}" >
+							</div>
+							<div class="item-info text-center text-black p-a10">
+								<h6 class="item-title font-weight-500">
+										{{corse.title}}
+								</h6>
+							<button class="btn btn_danger" (click)="deelCourse(corse.id)">  <h3>	حذف الدورة  </h3> </button>
+								
+								<!-- <ul class="item-review">
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star-half-o"></i></li>
+									<li><i class="fa fa-star-o"></i></li>
+								</ul> -->
+							</div>
+						</div>
+						
+				</div>	
+		</div>
+		
+    </div>
+   
+    <app-footer13></app-footer13>
+    
+    <button class="scroltop fa fa-chevron-up" ></button>
+</div>

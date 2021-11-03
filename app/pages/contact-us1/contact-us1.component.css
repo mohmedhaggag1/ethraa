@@ -1,0 +1,12 @@
+/* .imgSize{
+    width: 100%;
+    height: 20%;
+    background-size: cover;
+} */
+.imgSize1{
+    width: 100%;
+    height: 250px;
+}
+.imgSize1:hover{
+    mouse : cursor;
+}

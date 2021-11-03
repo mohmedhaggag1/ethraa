@@ -1,0 +1,138 @@
+<div class="page-wraper">
+
+
+	<!-- header -->
+	<app-header-light3></app-header-light3>
+	<!-- header END -->
+	<!-- Content -->
+	<div class="page-content bg-gray">
+		<!-- inner page banner -->
+		<app-banner1 [data]="banner"></app-banner1>
+		<!-- inner page banner END -->
+		<!-- contact area -->
+		<div class="section-full content-inner-2 contact-style-3">
+			<div class="container">
+				<div class="row m-lr0 contact-form-box">
+					<!-- <div class="col-lg-4 col-md-5 p-lr0 contact-info"
+						style="background-image:url(images/background/bg2.jpg); background-size: cover;">
+						<div class="contact-info-inner text-white">
+							<h3>الدعم الفني</h3>
+							<!-- <p class="m-b30">إذا كان لديك أي أسئلة ، فما عليك سوى استخدام تفاصيل الاتصال التالية.</p> -->
+					<!-- <ul class="no-margin">
+								<li class="icon-bx-wraper left m-b30">
+									<div class="icon-bx-xs bg-white"> <a href="javascript:void(0);"
+											class="icon-cell text-primary"><i class="ti-location-pin"></i></a> </div>
+									<div class="icon-content">
+										<h6 class="text-uppercase m-tb0 dlab-tilte">Address:</h6>
+										<p>123 West Street, Melbourne <br>Victoria 3000 Australia</p>
+									</div>
+								</li>
+								<li class="icon-bx-wraper left  m-b30">
+									<div class="icon-bx-xs bg-white"> <a href="javascript:void(0);"
+											class="icon-cell text-primary"><i class="ti-email"></i></a> </div>
+									<div class="icon-content">
+										<h6 class="text-uppercase m-tb0 dlab-tilte">Email:</h6>
+										<p>info@example.com<br>info@example.com</p>
+									</div>
+								</li>
+								<li class="icon-bx-wraper left">
+									<div class="icon-bx-xs bg-white"> <a href="javascript:void(0);"
+											class="icon-cell text-primary"><i class="ti-mobile"></i></a> </div>
+									<div class="icon-content">
+										<h6 class="text-uppercase m-tb0 dlab-tilte">PHONE</h6>
+										<p>+61 3 8376 6284<br>+61 123 456 7890</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div> -->
+
+					<div class="col-lg-12 col-md-12 p-lr0 ">
+						<div class="contact-form bg-white">
+							<div class="section-head text-right">
+								<h3 class="title">إتصل بنا </h3>
+
+								<div class="dlab-separator bg-primary"></div>
+								<p>نسعد دائما بمعرفة طلباتكم والإجابة على استفساراتكم الخاصة بالخدمات التي نقدمها ، حيث
+									يمكنكم ملء المعلومات المطلوبة أدناه ومن ثم إرسال استفساراتكم وسيتم الرد عليها بأقرب
+									فرصة ممكنة</p>
+							</div>
+							<div class="dzFormMsg"></div>
+							<form dir="rtl" method="post" [formGroup]="ContactUsData" (ngSubmit)="contactus()"
+								class="dzForm" action="script/contact.php">
+								<input type="hidden" value="Contact" name="dzToDo">
+								<div class="row" dir="rtl">
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input formControlName="name" type="text" required class="form-control"
+													placeholder="ادخل الإسم الاول ">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control"
+													placeholder=" ادخل الإسم الأخير ">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-12">
+										<div class="form-group">
+											<div class="input-group">
+												<input formControlName="subject" type="text" required
+													class="form-control" placeholder="أدخل الموضوع ">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input formControlName="email" type="email" class="form-control"
+													required placeholder="  أدخل بريدك الإلكتروني ">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input formControlName="phone" type="text" class="form-control" required
+													placeholder="أدخل رقم الجوال ">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<div class="input-group">
+												<textarea formControlName="message" rows="4" class="form-control"
+													required placeholder=" أدخل نص الرسالة ..."></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 text-right">
+										<button name="submit" type="submit" value="Submit" class="site-button"> إرسل
+											أستفسارك!
+										</button>
+										<button name="reset" type="reset" value="" class="site-button mr-2"> مسح
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- contact area  END -->
+	</div>
+	<!-- Content END-->
+	<!-- Footer -->
+	<!-- Newsletter -->
+	<!-- <app-newsletter2></app-newsletter2> -->
+	<!-- Footer -->
+	<app-footer13></app-footer13>
+	<!-- Footer END-->
+	<button class="scroltop fa fa-chevron-up"></button>
+</div>

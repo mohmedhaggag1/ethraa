@@ -1,0 +1,37 @@
+.tleft{
+    text-align: end; 
+}
+
+
+/*  */
+.hla{
+    margin-left: 100;
+    /* font-size: 20px; */
+}
+
+.hla1{ 
+    
+    margin-left: 350px; 
+    
+}
+
+
+.formcenter{
+
+    justify-content: center;
+    margin-left: 300px;
+}
+.hla1email{
+    margin-left: 375px; 
+}
+.hla1pass{
+    margin-left: 330px; 
+}
+.buttont{
+    justify-content: center;
+    margin-left: 180px ;
+}
+.log{
+    /* padding-right: 50px; */
+    text-align: left;
+}

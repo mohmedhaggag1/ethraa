@@ -1,0 +1,17 @@
+
+/* navbar  drob down */
+.header-nav .nav>li .sub-menu {
+right: 0;
+left:auto;
+/* width: 290px; */
+text-align: right;
+
+
+}
+.header-nav .nav>li .anelmarkaz{
+    width: 290px;
+}
+.header-nav .nav>li .sub-menu li a {
+   
+    font-weight: 600;
+}

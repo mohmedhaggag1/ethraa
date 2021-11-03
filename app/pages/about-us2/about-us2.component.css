@@ -1,0 +1,36 @@
+.section-content{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    /* font-family: 'Droid Arabic Kufi','Open Sans', sans-serif; */
+    direction: rtl;
+    box-sizing: border-box;
+    margin: 70px;
+}
+
+.text-uppercase{
+    /* -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    direction: rtl;
+    visibility: visible;
+    box-sizing: border-box;
+    margin-bottom: 10px; */
+    font-size: 2rem;
+    font-family: 'system-ui';
+    line-height: 1.42857143;
+    color: royalblue;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    margin-top: 0!important;
+    text-align: right;
+}
+p{
+    line-height: 1.5;
+    font-size: 19px;
+    margin-bottom: 24px;
+    font-style: italic;
+}

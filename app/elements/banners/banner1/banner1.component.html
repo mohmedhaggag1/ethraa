@@ -1,0 +1,19 @@
+<div class="dlab-bnr-inr overlay-black-middle text-center bg-pt" style="background-image:url({{data.bg_image}});">
+            <div class="container">
+                <div class="dlab-bnr-inr-entry align-m text-center">
+                    <h1 class="text-white">{{data.title}}</h1>
+					<!-- Breadcrumb row -->
+					<div >
+						<ul [ngStyle]=" {'color' : 'white'} " class="list-inline">
+							<li [ngStyle]=" {'color' : 'white'} ">{{data.pagetitle}}</li> 
+							/
+							<li><a [routerLink]="['/home-university']"
+								[ngStyle]=" {'color' : 'white'} "
+								>الرئيسيه</a></li>
+
+						</ul>
+					</div>
+					<!-- Breadcrumb row END -->
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,20 @@
+.page-content{
+    direction: rtl;
+}
+@media (min-width: 1200px){
+    .container {
+    max-width: 790px;}
+}
+
+h3{
+    font-family: system-ui;
+    color: blue;
+  }
+  
+p{
+line-height: 1.5;
+    margin-bottom: 14px;
+    font-size: large;
+    font-weight: 300;
+    color: black;
+}
